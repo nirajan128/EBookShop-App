@@ -1,0 +1,21 @@
+﻿@model List<Category> //A model of list of category passed from the controller
+<h1>Category List</h1>
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Category Name</th>
+            <th>Display Order</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--Use to use C# in html-->
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td>@obj.Name</td>
+                <td>@obj.DisplayOrder</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
