@@ -1,0 +1,15 @@
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Models\bin\Debug\net8.0\EBookShop.Models.deps.json
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Models\bin\Debug\net8.0\EBookShop.Models.runtimeconfig.json
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Models\bin\Debug\net8.0\EBookShop.Models.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Models\bin\Debug\net8.0\EBookShop.Models.pdb
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Models\obj\Debug\net8.0\EBookShop.Models.csproj.AssemblyReference.cache
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Models\obj\Debug\net8.0\EBookShop.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Models\obj\Debug\net8.0\EBookShop.Models.AssemblyInfoInputs.cache
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Models\obj\Debug\net8.0\EBookShop.Models.AssemblyInfo.cs
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Models\obj\Debug\net8.0\EBookShop.Models.csproj.CoreCompileInputs.cache
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Models\obj\Debug\net8.0\EBookShop.Models.sourcelink.json
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Models\obj\Debug\net8.0\EBookShop.Models.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Models\obj\Debug\net8.0\refint\EBookShop.Models.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Models\obj\Debug\net8.0\EBookShop.Models.pdb
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Models\obj\Debug\net8.0\EBookShop.Models.genruntimeconfig.cache
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Models\obj\Debug\net8.0\ref\EBookShop.Models.dll
