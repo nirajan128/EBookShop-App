@@ -971,6 +971,20 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "EBookShop.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.0",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.2"
+        },
+        "compile": {
+          "bin/placeholder/EBookShop.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EBookShop.Models.dll": {}
+        }
       }
     }
   },
@@ -2923,10 +2937,16 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "EBookShop.Models/1.0.0": {
+      "type": "project",
+      "path": "../EBookShop.Models/EBookShop.Models.csproj",
+      "msbuildProject": "../EBookShop.Models/EBookShop.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "EBookShop.Models >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.2"
@@ -2963,7 +2983,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop.Models\\EBookShop.Models.csproj": {
+              "projectPath": "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop.Models\\EBookShop.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
