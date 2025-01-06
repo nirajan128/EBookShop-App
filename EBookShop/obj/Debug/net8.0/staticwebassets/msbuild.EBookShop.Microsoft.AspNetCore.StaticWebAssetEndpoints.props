@@ -16,13 +16,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\EBookShop.tv1tjw5tpf.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ybFtJJBbifxqlCZTMc2kb851bIBZM1g0TGc5Gy7Hsl8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1127"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ybFtJJBbifxqlCZTMc2kb851bIBZM1g0TGc5Gy7Hsl8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 05 Jan 2025 16:54:17 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1127"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ybFtJJBbifxqlCZTMc2kb851bIBZM1g0TGc5Gy7Hsl8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Jan 2025 19:19:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/EBookShop/EBookShop.tv1tjw5tpf.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\EBookShop.tv1tjw5tpf.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tv1tjw5tpf"},{"Name":"integrity","Value":"sha256-ybFtJJBbifxqlCZTMc2kb851bIBZM1g0TGc5Gy7Hsl8="},{"Name":"label","Value":"_content/EBookShop/EBookShop.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1127"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ybFtJJBbifxqlCZTMc2kb851bIBZM1g0TGc5Gy7Hsl8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 05 Jan 2025 16:54:17 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1127"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ybFtJJBbifxqlCZTMc2kb851bIBZM1g0TGc5Gy7Hsl8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Jan 2025 19:19:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/EBookShop/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>

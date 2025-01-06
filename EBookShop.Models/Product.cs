@@ -47,4 +47,4 @@ namespace EBookShop.Models
         public double Price100 { get; set; }
     }
 }
-}
+
