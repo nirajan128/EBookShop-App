@@ -1,4 +1,6 @@
 using EBookShop.DataAccess.Data;
+using EBookShop.DataAccess.Repository.IRepository;
+using EBookShop.DataAccess.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,15 @@ builder.Services.AddControllersWithViews();
 // Register ApplicationDbContext with PostgreSQL provider
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+//Always register DEPENDENCY INJECTION service while using Repository
+//Types of Dependency: \
+//Scoped: state stays same for each request for all dependencies 
+//TRansient: Sate changes with each request 
+//Singleton: The state stays same for the lifecycle of application
+//Add scope parameter takes and Interface and a class as a param
+//Any class using IUnitOfWork Interface  is implemnting UitOfWork class
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 
