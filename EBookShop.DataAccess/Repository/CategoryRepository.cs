@@ -14,7 +14,7 @@ namespace EBookShop.DataAccess.Repository
     {
         private ApplicationDbContext _db;
 
-        //Db connectio n used from application DbContext
+        //Db connection used from application DbContext
         //Passes the db to the base class REpository
         public CategoryRepository(ApplicationDbContext db) : base(db)
         {
