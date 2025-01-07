@@ -1,0 +1,60 @@
+﻿@model List<Product>
+
+<div class="container">
+    <div class="row pt-4 pb-3">
+        <div class="col-6">
+            <h2>Product</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Product" asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Add Category</a>
+        </div>
+
+    </div>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Description</th>
+                <th>ISBN</th>
+                <th>List Price</th>
+                <th>Price</th>
+                <th>Price 50</th>
+                <th>Price 100</th>
+                <th></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <!--Use to use C# in html-->
+            @foreach (var obj in Model)
+            {
+                <tr>
+                    <td>@obj.Title</td>
+                    <td>@obj.Author</td>
+                    <td>@obj.Description</td>
+                    <td>@obj.ISBN</td>
+                    <td>@obj.ListPrice</td>
+                    <td>@obj.Price</td>
+                    <td>@obj.Price50</td>
+                    <td>@obj.Price100</td>
+                    <td>
+                        <div class="w-75 btn-group" role="group">
+                            <!--asp-route passes object Id to the Edit Action in the category controller
+                                is the parameter passed in action method
+                            -->
+                            <a asp-controller="Product" asp-route-Id="@obj.Id" asp-action="Edit" class="btn btn-primary mx-2">
+                                <i class="bi bi-pencil-square"></i>Edit
+                            </a>
+
+                            <a asp-controller="Product" asp-route-Id="@obj.Id" asp-action="Delete" class="btn btn-danger mx-2">
+                                <i class="bi bi-trash3"></i>Delete
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>

@@ -10,6 +10,7 @@ namespace EBookShop.DataAccess.Repository.IRepository
     public interface IUnitOfWork
     {
         ICategoryRepository Category { get; } //Category
+        IProductRepository Product { get; }
         public void Save(); //method used by all classes
     }
 }
