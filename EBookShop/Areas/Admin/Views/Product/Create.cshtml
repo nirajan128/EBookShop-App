@@ -1,0 +1,62 @@
+﻿@model Product
+<!-- By default if we do not give  param in the category create action controller, it will create a empty category class
+	 ASP are Taghelpers-->
+
+<form method="post">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary">Create Product</h2>
+			<hr />
+		</div>
+		<div asp-validation-summary="All"></div>
+		<div class="row mb-3">
+			<!--Asp for binds to a defined class property-->
+			<label asp-for="Title"></label>
+			<input asp-for="Title" class="form-control" />
+			<span asp-validation-for="Title" class="text-danger"></span>
+
+
+			<label asp-for="Author"></label>
+			<input asp-for="Author" class="form-control" />
+			<span asp-validation-for="Author" class="text-danger"></span>
+
+			<label asp-for="Description"></label>
+			<input asp-for="Description" class="form-control" />
+			<span asp-validation-for="Description" class="text-danger"></span>
+
+			<label asp-for="ISBN"></label>
+			<input asp-for="ISBN" class="form-control" />
+			<span asp-validation-for="ISBN" class="text-danger"></span>
+
+			<label asp-for="ListPrice"></label>
+			<input asp-for="ListPrice" class="form-control" />
+			<span asp-validation-for="ListPrice" class="text-danger"></span>
+
+			<label asp-for="Price"></label>
+			<input asp-for="Price" class="form-control" />
+			<span asp-validation-for="Price" class="text-danger"></span>
+
+			<label asp-for="Price50"></label>
+			<input asp-for="Price50" class="form-control" />
+			<span asp-validation-for="Price50" class="text-danger"></span>
+
+			<label asp-for="Price100"></label>
+			<input asp-for="Price100" class="form-control" />
+			<span asp-validation-for="Price100" class="text-danger"></span>
+		</div>
+		<div class="row">
+			<div class="col-6 col-md-3">
+				<button type="submit" class="btn btn-primary form-control">Create</button>
+			</div>
+			<div class="col-6 col-md-3">
+				<a asp-controller="Product" asp-action="Index" class="btn btn-outline-secondary form-control">Back</a>
+			</div>
+		</div>
+	</div>
+
+</form>
+
+<!--Adds script to the file-->
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" /> <!--Client side validation using JQuery-->
+}

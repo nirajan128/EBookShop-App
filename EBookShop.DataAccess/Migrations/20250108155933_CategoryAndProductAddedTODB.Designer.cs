@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace EBookShop.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250106193629_CategoryAndProductAddedToDb")]
-    partial class CategoryAndProductAddedToDb
+    [Migration("20250108155933_CategoryAndProductAddedTODB")]
+    partial class CategoryAndProductAddedTODB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

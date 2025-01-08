@@ -8,7 +8,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace EBookShop.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class CategoryAndProductAddedToDb : Migration
+    public partial class CategoryAndProductAddedTODB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

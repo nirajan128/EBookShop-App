@@ -20,9 +20,10 @@ namespace EBookShop.DataAccess.Repository
         {
             _db = db;
         }
-        public void Update(Category obj)
+
+        public void Update(Product obj)
         {
-            _db.Update(obj);
+            _db.Product.Update(obj);
         }
     }
 }

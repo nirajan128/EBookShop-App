@@ -268,3 +268,9 @@ C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\obj\Debug\net8.0\staticwebas
 C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\obj\Debug\net8.0\EBookShop.csproj.Up2Date
 C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\obj\Debug\net8.0\EBookShop.genruntimeconfig.cache
 C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\obj\Debug\net8.0\ref\EBookShop.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
