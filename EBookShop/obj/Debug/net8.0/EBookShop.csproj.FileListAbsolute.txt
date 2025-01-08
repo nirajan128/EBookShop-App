@@ -274,3 +274,13 @@ C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\Microsoft.E
 C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\System.Web.Mvc.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\System.Web.Razor.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\System.Web.Helpers.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\System.Web.WebPages.Deployment.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\System.Web.WebPages.Razor.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\System.Web.WebPages.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\Microsoft.Web.Infrastructure.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop\obj\Debug\net8.0\EBookShop.MvcApplicationPartsAssemblyInfo.cs

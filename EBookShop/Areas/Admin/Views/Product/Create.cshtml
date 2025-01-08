@@ -1,4 +1,4 @@
-﻿@model Product
+﻿@model ProductVM
 <!-- By default if we do not give  param in the category create action controller, it will create a empty category class
 	 ASP are Taghelpers-->
 
@@ -11,44 +11,48 @@
 		<div asp-validation-summary="All"></div>
 		<div class="row mb-3">
 			<!--Asp for binds to a defined class property-->
-			<label asp-for="Title"></label>
-			<input asp-for="Title" class="form-control" />
-			<span asp-validation-for="Title" class="text-danger"></span>
+			<label asp-for="Product.Title"></label>
+			<input asp-for="Product.Title" class="form-control" />
+			<span asp-validation-for="Product.Title" class="text-danger"></span>
 
 
-			<label asp-for="Author"></label>
-			<input asp-for="Author" class="form-control" />
-			<span asp-validation-for="Author" class="text-danger"></span>
+			<label asp-for="Product.Author"></label>
+			<input asp-for="Product.Author" class="form-control" />
+			<span asp-validation-for="Product.Author" class="text-danger"></span>
 
-			<label asp-for="Description"></label>
-			<input asp-for="Description" class="form-control" />
-			<span asp-validation-for="Description" class="text-danger"></span>
+			<label asp-for="Product.Description"></label>
+			<input asp-for="Product.Description" class="form-control" />
+			<span asp-validation-for="Product.Description" class="text-danger"></span>
 
-			<label asp-for="ISBN"></label>
-			<input asp-for="ISBN" class="form-control" />
-			<span asp-validation-for="ISBN" class="text-danger"></span>
+			<label asp-for="Product.ISBN"></label>
+			<input asp-for="Product.ISBN" class="form-control" />
+			<span asp-validation-for="Product.ISBN" class="text-danger"></span>
 
-			<label asp-for="ListPrice"></label>
-			<input asp-for="ListPrice" class="form-control" />
-			<span asp-validation-for="ListPrice" class="text-danger"></span>
+			<label asp-for="Product.ListPrice"></label>
+			<input asp-for="Product.ListPrice" class="form-control" />
+			<span asp-validation-for="Product.ListPrice" class="text-danger"></span>
 
-			<label asp-for="Price"></label>
-			<input asp-for="Price" class="form-control" />
-			<span asp-validation-for="Price" class="text-danger"></span>
+			<label asp-for="Product.Price"></label>
+			<input asp-for="Product.Price" class="form-control" />
+			<span asp-validation-for="Product.Price" class="text-danger"></span>
 
-			<label asp-for="Price50"></label>
-			<input asp-for="Price50" class="form-control" />
-			<span asp-validation-for="Price50" class="text-danger"></span>
+			<label asp-for="Product.Price50"></label>
+			<input asp-for="Product.Price50" class="form-control" />
+			<span asp-validation-for="Product.Price50" class="text-danger"></span>
 
-			<label asp-for="Price100"></label>
-			<input asp-for="Price100" class="form-control" />
-			<span asp-validation-for="Price100" class="text-danger"></span>
+			<label asp-for="Product.Price100"></label>
+			<input asp-for="Product.Price100" class="form-control" />
+			<span asp-validation-for="Product.Price100" class="text-danger"></span>
 
-			<label asp-for="CategoryId"></label>
-			<select asp-for="CategoryId" asp-items="ViewBag.CategoryList" class="form-select">
+			<label asp-for="Product.ImageUrl"></label>
+			<input asp-for="Product.ImageUrl" class="form-control" />
+			<span asp-validation-for="Product.ImageUrl" class="text-danger"></span>
+
+			<label asp-for="Product.CategoryId"></label>
+			<select asp-for="Product.CategoryId" asp-items="@Model.CategoryList" class="form-select">
 				<option disabled selected> -- Select Category --</option>
 			</select>
-			<span asp-validation-for="CategoryId" class="text-danger"></span>
+			<span asp-validation-for="Product.CategoryId" class="text-danger"></span>
 		</div>
 		<div class="row">
 			<div class="col-6 col-md-3">

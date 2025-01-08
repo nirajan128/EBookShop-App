@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace EBookShop.Models
 {
@@ -51,8 +52,10 @@ namespace EBookShop.Models
         public int CategoryId { get; set; }
 
         [ForeignKey("CategoryId")] //sets the CategoryId of Category table to foreign key 
+        [ValidateNever]
         public Category Category { get; set; }
 
+        [ValidateNever]
         public String ImageUrl { get; set; }
     }
 }
