@@ -1,6 +1,7 @@
 ﻿using EBookShop.DataAccess.Repository.IRepository;
 using EBookShop.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace EBookShop.Areas.Admin.Controllers
 {
@@ -18,6 +19,14 @@ namespace EBookShop.Areas.Admin.Controllers
         public IActionResult Index()
         {
             List<Product> objProductList = _unitOfWork.Product.GetAll().ToList();
+
+            //Projection: Using SelectListItem type to only get the Id of Category
+            IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(     
+                u=> new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                });
             return View(objProductList);
         }
 
