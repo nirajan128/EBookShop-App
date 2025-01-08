@@ -52,6 +52,8 @@ namespace EBookShop.Models
 
         [ForeignKey("CategoryId")] //sets the CategoryId of Category table to foreign key 
         public Category Category { get; set; }
+
+        public String ImageUrl { get; set; }
     }
 }
 
