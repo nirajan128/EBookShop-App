@@ -17,12 +17,12 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\images\products\" />
-  </ItemGroup>
-
 	<ItemGroup>
 		<ProjectReference Include="..\EBookShop.DataAccess\EBookShop.DataAccess.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="wwwroot\images\product\" />
 	</ItemGroup>
 
 </Project>

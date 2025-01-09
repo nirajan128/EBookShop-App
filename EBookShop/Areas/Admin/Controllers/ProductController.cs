@@ -77,7 +77,7 @@ namespace EBookShop.Areas.Admin.Controllers
                     string filename = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
 
                     //gets the path of the product flder in the images
-                    string productPath = Path.Combine(wwwRootPath, @"images\products");
+                    string productPath = Path.Combine(wwwRootPath, @"images\product");
 
                     //Writes the file to the location - Creates it
                     using (var filestream = new FileStream(Path.Combine(productPath, filename), FileMode.Create))
@@ -85,8 +85,7 @@ namespace EBookShop.Areas.Admin.Controllers
                         file.CopyTo(filestream);
                     }
 
-                    //Sets the image url
-                    productVM.Product.ImageUrl = @"images\products" + filename;
+                    productVM.Product.ImageUrl =@"\images\product\"+filename;
                 }
 
                 
@@ -97,6 +96,7 @@ namespace EBookShop.Areas.Admin.Controllers
             }
             else
             {
+                //Only selects CategorId form Category model
                 productVM.CategoryList = _unitOfWork.Category.GetAll().Select(
                 u => new SelectListItem
                 {
