@@ -12,6 +12,8 @@
 		</div>
 		<div asp-validation-summary="All"></div>
 		<div class="row mb-3">
+
+			
 			<!--Asp for binds to a defined class property-->
 			<label asp-for="Product.Title"></label>
 			<input asp-for="Product.Title" class="form-control" />
@@ -23,7 +25,7 @@
 			<span asp-validation-for="Product.Author" class="text-danger"></span>
 
 			<label asp-for="Product.Description"></label>
-			<input asp-for="Product.Description" class="form-control" />
+			<textarea asp-for="Product.Description" class="form-control" ><</textarea>
 			<span asp-validation-for="Product.Description" class="text-danger"></span>
 
 			<label asp-for="Product.ISBN"></label>
@@ -69,5 +71,21 @@
 
 <!--Adds script to the file-->
 @section Scripts {
+
+	<!--Integration of tinyMCE-->
+	<script>
+		tinymce.init({
+		  selector: 'textarea',
+		  plugins: [
+			// Core editing features
+			'anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'image', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount',
+			// Your account includes a free trial of TinyMCE premium features
+			// Try the most popular premium features until Jan 22, 2025:
+			'checklist', 'mediaembed', 'casechange', 'export', 'formatpainter', 'pageembed', 'a11ychecker', 'tinymcespellchecker', 'permanentpen', 'powerpaste', 'advtable', 'advcode', 'editimage', 'advtemplate', 'ai', 'mentions', 'tinycomments', 'tableofcontents', 'footnotes', 'mergetags', 'autocorrect', 'typography', 'inlinecss', 'markdown','importword', 'exportword', 'exportpdf'
+		  ],
+		  toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+		
+		});
+	</script>
 	<partial name="_ValidationScriptsPartial" /> <!--Client side validation using JQuery-->
 }
