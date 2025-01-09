@@ -12,9 +12,13 @@ namespace EBookShop.Areas.Admin.Controllers
         //ICategory Repository from Repository is used to replace the application DB context in controller [Same REpository can be used for different controller]
         //All the method except for [Update and Save ] are derived from base Interface Irepository
         private readonly IUnitOfWork _unitOfWork;
-      public ProductController(IUnitOfWork unitOfWork)
+
+        //Provides info about web hosting environment, used to access wwwroot
+        private readonly IWebHostEnvironment _webHostEnvironment;
+      public ProductController(IUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
         {
             _unitOfWork = unitOfWork;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         public IActionResult Index()
@@ -65,6 +69,27 @@ namespace EBookShop.Areas.Admin.Controllers
             //IF state of the category Model is valid meaning it completes all validation requirements
             if (ModelState.IsValid)
             {
+                string wwwRootPath = _webHostEnvironment.WebRootPath; //gets the root path of the wwwRootFolder
+
+                if(file != null)
+                {
+                    //to generate a random guid name for image and concatinate its extension
+                    string filename = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+
+                    //gets the path of the product flder in the images
+                    string productPath = Path.Combine(wwwRootPath, @"images\products");
+
+                    //Writes the file to the location - Creates it
+                    using (var filestream = new FileStream(Path.Combine(productPath, filename), FileMode.Create))
+                    {
+                        file.CopyTo(filestream);
+                    }
+
+                    //Sets the image url
+                    productVM.Product.ImageUrl = @"images\products" + filename;
+                }
+
+                
                 _unitOfWork.Product.Add(productVM.Product); //Method of entity fame work: Keeps track of the changes
                 _unitOfWork.Save(); //Goes to the db and make changes
                 TempData["success"] = "Category Created Successfully";
