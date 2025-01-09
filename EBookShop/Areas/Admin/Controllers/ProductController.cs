@@ -79,6 +79,20 @@ namespace EBookShop.Areas.Admin.Controllers
                     //gets the path of the product flder in the images
                     string productPath = Path.Combine(wwwRootPath, @"images\product");
 
+
+                    //FOR UPDATING - checks if the image file field already has a data in it
+                    if (!string.IsNullOrEmpty(productVM.Product.ImageUrl)) {
+
+                      //Delete the old image
+                      var oldImagePath = Path.Combine(wwwRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
+
+                        //checks if the file exists
+                        if (System.IO.File.Exists(oldImagePath))
+                        {
+                            System.IO.File.Delete(oldImagePath); //deletes the file
+                        }
+                    }
+
                     //Writes the file to the location - Creates it
                     using (var filestream = new FileStream(Path.Combine(productPath, filename), FileMode.Create))
                     {
@@ -88,8 +102,16 @@ namespace EBookShop.Areas.Admin.Controllers
                     productVM.Product.ImageUrl =@"\images\product\"+filename;
                 }
 
-                
-                _unitOfWork.Product.Add(productVM.Product); //Method of entity fame work: Keeps track of the changes
+                //If id exists its a Update, if not its a Create
+                if (productVM.Product.Id == 0) 
+                {
+                    _unitOfWork.Product.Add(productVM.Product); //Method of entity fame work: Keeps track of the changes
+                }
+                else
+                {
+                    _unitOfWork.Product.Update(productVM.Product);
+                }
+               
                 _unitOfWork.Save(); //Goes to the db and make changes
                 TempData["success"] = "Category Created Successfully";
                 return RedirectToAction("Index"); //Redirects to Index ation of category controller
