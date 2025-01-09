@@ -24,7 +24,7 @@ namespace EBookShop.Areas.Admin.Controllers
         }
 
         //http get
-        public IActionResult Create()
+        public IActionResult Upsert(int? id) //Up for update ad sert for insert, to be used as both Create and Update action depending on the param
         {
             //Projection: Using SelectListItem type to only get the Id of Category
             IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(
@@ -42,12 +42,25 @@ namespace EBookShop.Areas.Admin.Controllers
                 CategoryList = CategoryList,
                 Product = new Product()
             };
-            return View(productVM);
+
+            //If Id is 0 or null then its a create functionality
+            if (id == null || id == 0)
+            {
+                //Create
+                return View(productVM);
+            }
+            else
+            {
+                //Update
+                productVM.Product = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id); //find the category onject in db based on the id
+                return View(productVM);
+            }
+           
         }
 
         //Used for post requests/method
         [HttpPost]
-        public IActionResult Create(ProductVM productVM)
+        public IActionResult Upsert(ProductVM productVM, IFormFile? file)
         {
             //IF state of the category Model is valid meaning it completes all validation requirements
             if (ModelState.IsValid)
@@ -68,39 +81,6 @@ namespace EBookShop.Areas.Admin.Controllers
                 return View(productVM); //if model is not valid it stays on the create view
             }
            
-        }
-
-
-        //http get
-        public IActionResult Edit(int? id)
-        {
-
-            //Checks if the provided paramenter is valid
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
-            Product productFromDb = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id); //find the category onject in db based on the id
-            if (productFromDb == null)
-            {
-                return NotFound();
-            }
-
-
-            return View(productFromDb);
-        }
-
-        [HttpPost]
-        public IActionResult Edit(Product obj)
-        {
-            if (ModelState.IsValid)
-            {
-                _unitOfWork.Product.Update(obj); //Method of entity fame work: Keeps track of the changes
-                _unitOfWork.Save();
-                TempData["success"] = "Product Edited Successfully";
-                return RedirectToAction("Index");
-            }
-            return View();
         }
 
         //http get

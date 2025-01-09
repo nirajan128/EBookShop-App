@@ -5,11 +5,12 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using EBookShop.DataAccess.Data;
+using EBookShop.DataAccess.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 
 namespace EBookShop.DataAccess.Repository
 {
-    public class Repository<T> where T : class
+    public class Repository<T>: IRepository<T> where T : class
     {
         private readonly ApplicationDbContext _db;
 

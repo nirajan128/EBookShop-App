@@ -2,10 +2,12 @@
 <!-- By default if we do not give  param in the category create action controller, it will create a empty category class
 	 ASP are Taghelpers-->
 
-<form method="post">
+<form method="post" enctype="multipart/form-data">
+	<input asp-for="@Model.Product.Id" hidden />
 	<div class="border p-3 mt-4">
 		<div class="row pb-2">
-			<h2 class="text-primary">Create Product</h2>
+
+			<h2 class="text-primary">@(Model.Product.Id != 0?"Update": "Create") Product</h2>
 			<hr />
 		</div>
 		<div asp-validation-summary="All"></div>
@@ -45,9 +47,8 @@
 			<span asp-validation-for="Product.Price100" class="text-danger"></span>
 
 			<label asp-for="Product.ImageUrl"></label>
-			<input asp-for="Product.ImageUrl" class="form-control" />
-			<span asp-validation-for="Product.ImageUrl" class="text-danger"></span>
-
+			<input type="file" class="form-control" />
+			
 			<label asp-for="Product.CategoryId"></label>
 			<select asp-for="Product.CategoryId" asp-items="@Model.CategoryList" class="form-select">
 				<option disabled selected> -- Select Category --</option>
@@ -56,7 +57,7 @@
 		</div>
 		<div class="row">
 			<div class="col-6 col-md-3">
-				<button type="submit" class="btn btn-primary form-control">Create</button>
+				<button type="submit" class="btn btn-primary form-control">@(Model.Product.Id != 0 ? "Update" : "Create")</button>
 			</div>
 			<div class="col-6 col-md-3">
 				<a asp-controller="Product" asp-action="Index" class="btn btn-outline-secondary form-control">Back</a>
