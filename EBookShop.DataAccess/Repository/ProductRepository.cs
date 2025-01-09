@@ -23,7 +23,25 @@ namespace EBookShop.DataAccess.Repository
 
         public void Update(Product obj)
         {
-            _db.Product.Update(obj);
+           var objFromDb =  _db.Product.FirstOrDefault(u => u.Id == obj.Id);
+            if (objFromDb != null) 
+            { 
+              objFromDb.Title = obj.Title;
+                objFromDb.Description = obj.Description;
+                objFromDb.Price = obj.Price;
+                objFromDb.Category = obj.Category;
+                objFromDb.Author = obj.Author;
+                objFromDb.ListPrice = obj.ListPrice;
+                objFromDb.Price50 = obj.Price50;
+                objFromDb.Price100 = obj.Price100;
+
+                if (obj.ImageUrl != null) 
+                {
+                    objFromDb.ImageUrl = obj.ImageUrl;
+                }
+              
+            
+            }
         }
     }
 }
