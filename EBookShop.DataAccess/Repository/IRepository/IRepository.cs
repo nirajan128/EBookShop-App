@@ -13,10 +13,10 @@ namespace EBookShop.DataAccess.Repository.IRepository
         //Different method related to it
 
         //Get All the Category from db
-        IEnumerable<T> GetAll(); //COllections
+        IEnumerable<T> GetAll(string? includeProperties = null); //COllections
 
         //Get a single category
-        T GetFirstOrDefault(Expression<Func<T, bool>> filter);
+        T GetFirstOrDefault(Expression<Func<T, bool>> filter, string? includeProperties = null);
         void Remove(T entity);
         void Add(T entity);
         void RemoveRange(IEnumerable<T> entities);

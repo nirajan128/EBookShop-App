@@ -20,22 +20,44 @@ namespace EBookShop.DataAccess.Repository
         {
             _db = db;
             this.dbSet = _db.Set<T>(); //sets the dbSet as the class that was recived as generic class, now all the db method can be accessed
+            _db.Product.Include(u => u.Category); //Includes the whole Catgeory
         }
         public void Add(T entity)
         {
             dbSet.Add(entity); //Adds data to database
         }
 
-        public T GetFirstOrDefault(Expression<Func<T, bool>> filter)
+        public T GetFirstOrDefault(Expression<Func<T, bool>> filter, string? includeProperties = null)
         {
             IQueryable<T> query = dbSet;  //Stores the class as a Query
-            query = query.Where(filter); //APplies the fileter
+            query = query.Where(filter); //Applies the filter
+            if (!string.IsNullOrEmpty(includeProperties))
+            {
+
+                foreach (var includeProp in includeProperties //Iterates through the include properties and splits the words
+                    .Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProp); //includes the includeprop in query
+                }
+            }
             return query.FirstOrDefault(); //Returns the first element
         }
 
-        public IEnumerable<T> GetAll()
+        //Two INclude properties: Category, BookCover
+        public IEnumerable<T> GetAll(string? includeProperties = null)
         {
             IQueryable<T> query = dbSet;  //Stores the class as a Query
+
+            if (!string.IsNullOrEmpty(includeProperties))
+            {
+
+                foreach (var includeProp in includeProperties //Iterates through the include properties and splits the words
+                    .Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProp); //includes the includeprop in query
+                }
+            }
+            
             return query.ToList(); //Returns the data as a list
         }
 

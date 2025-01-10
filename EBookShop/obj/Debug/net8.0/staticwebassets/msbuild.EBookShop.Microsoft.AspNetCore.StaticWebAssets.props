@@ -54,23 +54,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\product\37d13efd-72cd-4967-b247-8d8624dfbd06.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\product\c4414b5e-67bb-4a26-b47c-6d490e8e168c.png'))">
       <SourceType>Package</SourceType>
       <SourceId>EBookShop</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/EBookShop</BasePath>
-      <RelativePath>images/product/37d13efd-72cd-4967-b247-8d8624dfbd06.png</RelativePath>
+      <RelativePath>images/product/c4414b5e-67bb-4a26-b47c-6d490e8e168c.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>29m06gjs41</Fingerprint>
-      <Integrity>Wll2nQ67n+XY9yzDR0e5KKvK5LrtFSMqU+RdsR26fFc=</Integrity>
+      <Fingerprint>sbat6d6juo</Fingerprint>
+      <Integrity>iBMAYZ3SPioxFDscmy+oHKHM/Ikjl6z7IgDrpX7MGEs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\product\37d13efd-72cd-4967-b247-8d8624dfbd06.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\product\c4414b5e-67bb-4a26-b47c-6d490e8e168c.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))">
       <SourceType>Package</SourceType>

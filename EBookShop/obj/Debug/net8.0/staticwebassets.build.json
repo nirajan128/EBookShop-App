@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wegb5KOtLDsaleeDWtT+N2Yv5JRpPgDlcUjU3SEAfD8=",
+  "Hash": "lV9lG3eqRkhg7IHPSK6XZSSsEe1DUsL2L0nNKnwm2tk=",
   "Source": "EBookShop",
   "BasePath": "_content/EBookShop",
   "Mode": "Default",
@@ -101,12 +101,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop\\wwwroot\\images\\product\\37d13efd-72cd-4967-b247-8d8624dfbd06.png",
+      "Identity": "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop\\wwwroot\\images\\product\\c4414b5e-67bb-4a26-b47c-6d490e8e168c.png",
       "SourceId": "EBookShop",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop\\wwwroot\\",
       "BasePath": "_content/EBookShop",
-      "RelativePath": "images/product/37d13efd-72cd-4967-b247-8d8624dfbd06#[.{fingerprint}]?.png",
+      "RelativePath": "images/product/c4414b5e-67bb-4a26-b47c-6d490e8e168c#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -115,11 +115,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "29m06gjs41",
-      "Integrity": "Wll2nQ67n+XY9yzDR0e5KKvK5LrtFSMqU+RdsR26fFc=",
+      "Fingerprint": "sbat6d6juo",
+      "Integrity": "iBMAYZ3SPioxFDscmy+oHKHM/Ikjl6z7IgDrpX7MGEs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\37d13efd-72cd-4967-b247-8d8624dfbd06.png"
+      "OriginalItemSpec": "wwwroot\\images\\product\\c4414b5e-67bb-4a26-b47c-6d490e8e168c.png"
     },
     {
       "Identity": "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop\\wwwroot\\js\\site.js",
@@ -1670,8 +1670,8 @@
       ]
     },
     {
-      "Route": "images/product/37d13efd-72cd-4967-b247-8d8624dfbd06.29m06gjs41.png",
-      "AssetFile": "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop\\wwwroot\\images\\product\\37d13efd-72cd-4967-b247-8d8624dfbd06.png",
+      "Route": "images/product/c4414b5e-67bb-4a26-b47c-6d490e8e168c.png",
+      "AssetFile": "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop\\wwwroot\\images\\product\\c4414b5e-67bb-4a26-b47c-6d490e8e168c.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1680,7 +1680,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "31942"
+          "Value": "103088"
         },
         {
           "Name": "Content-Type",
@@ -1688,56 +1688,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Wll2nQ67n+XY9yzDR0e5KKvK5LrtFSMqU+RdsR26fFc=\""
+          "Value": "\"iBMAYZ3SPioxFDscmy+oHKHM/Ikjl6z7IgDrpX7MGEs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:29:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "29m06gjs41"
-        },
-        {
-          "Name": "label",
-          "Value": "images/product/37d13efd-72cd-4967-b247-8d8624dfbd06.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Wll2nQ67n+XY9yzDR0e5KKvK5LrtFSMqU+RdsR26fFc="
-        }
-      ]
-    },
-    {
-      "Route": "images/product/37d13efd-72cd-4967-b247-8d8624dfbd06.png",
-      "AssetFile": "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop\\wwwroot\\images\\product\\37d13efd-72cd-4967-b247-8d8624dfbd06.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "31942"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Wll2nQ67n+XY9yzDR0e5KKvK5LrtFSMqU+RdsR26fFc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:29:01 GMT"
+          "Value": "Thu, 09 Jan 2025 17:51:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1747,7 +1702,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Wll2nQ67n+XY9yzDR0e5KKvK5LrtFSMqU+RdsR26fFc="
+          "Value": "sha256-iBMAYZ3SPioxFDscmy+oHKHM/Ikjl6z7IgDrpX7MGEs="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/c4414b5e-67bb-4a26-b47c-6d490e8e168c.sbat6d6juo.png",
+      "AssetFile": "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop\\wwwroot\\images\\product\\c4414b5e-67bb-4a26-b47c-6d490e8e168c.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "103088"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iBMAYZ3SPioxFDscmy+oHKHM/Ikjl6z7IgDrpX7MGEs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 17:51:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sbat6d6juo"
+        },
+        {
+          "Name": "label",
+          "Value": "images/product/c4414b5e-67bb-4a26-b47c-6d490e8e168c.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iBMAYZ3SPioxFDscmy+oHKHM/Ikjl6z7IgDrpX7MGEs="
         }
       ]
     },
