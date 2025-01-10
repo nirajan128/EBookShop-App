@@ -130,44 +130,39 @@ namespace EBookShop.Areas.Admin.Controllers
            
         }
 
-        //http get
-        public IActionResult Delete(int? id)
-        {
-
-            //Checks if the provided paramenter is valid
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
-            Product productFromDb = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id); //find the category onject in db based on the id
-            if (productFromDb == null)
-            {
-                return NotFound();
-            }
-
-
-            return View(productFromDb);
-        }
-
-        [HttpPost, ActionName("Delete")] //Specifies the name of the action since we have a different actionName
-        public IActionResult DeletePOST(int? id)
-        {
-            Product? obj = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id);
-            if (obj == null)
-            {
-                return NotFound();
-            }
-            _unitOfWork.Product.Remove(obj); //Method of entity fame work: Keeps track of the changes
-            _unitOfWork.Save();
-            TempData["success"] = "Category Deleted Successfully";
-            return RedirectToAction("Index");
-        }
+        
 
         #region API Calls
         [HttpGet]
-        public IActionResult GetAll(int id) {
+        public IActionResult GetAll() {
             List<Product> objProductList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
             return Json(new { data = objProductList}); //returns a new json object
+        }
+
+     
+        public IActionResult Delete(int? id)
+        {
+            var productTobeDeleted = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id);
+            if(productTobeDeleted == null)
+            {
+                return Json(new { success = false,message = "No data found" }); //returns a new json object
+            }
+
+
+            //Delete the old image
+            var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, productTobeDeleted.ImageUrl.TrimStart('\\'));
+
+            //checks if the file exists
+            if (System.IO.File.Exists(oldImagePath))
+            {
+                System.IO.File.Delete(oldImagePath); //deletes the file
+            }
+
+            _unitOfWork.Product.Remove(productTobeDeleted);
+            _unitOfWork.Save();
+
+            return Json(new { success = true, message = "Product Deleted" }); //returns a new json object
+
         }
         #endregion
     }
