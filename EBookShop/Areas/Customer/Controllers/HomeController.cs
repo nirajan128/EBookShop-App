@@ -23,6 +23,12 @@ namespace EBookShop.Areas.Customer.Controllers
             return View(productList);
         }
 
+        public IActionResult Detail(int productId)
+        {
+            Product product = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == productId,includeProperties: "Category");
+            return View(product);
+        }
+
         public IActionResult Privacy()
         {
             return View();
