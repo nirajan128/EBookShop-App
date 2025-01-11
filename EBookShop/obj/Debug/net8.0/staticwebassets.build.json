@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rlkm9h+TDDjHl+E4IKft6Lm2Kh1CeFNFTPDDUA+iOOM=",
+  "Hash": "j0hpbZzFlHKH2evCYZLGe6TUr29uZpVfmDZ6jdGPOe4=",
   "Source": "EBookShop",
   "BasePath": "_content/EBookShop",
   "Mode": "Default",
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop\\wwwroot\\images\\product\\7718027f-a71c-4041-a4cb-f675be6f189e.png",
+      "SourceId": "EBookShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop\\wwwroot\\",
+      "BasePath": "_content/EBookShop",
+      "RelativePath": "images/product/7718027f-a71c-4041-a4cb-f675be6f189e#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e9u8ewuqbc",
+      "Integrity": "zgZdhsWXTBfTazSXIG2MRjSx3UY1X+sSJO5Ln56ScIs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\7718027f-a71c-4041-a4cb-f675be6f189e.png"
     },
     {
       "Identity": "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop\\wwwroot\\images\\product\\c4414b5e-67bb-4a26-b47c-6d490e8e168c.png",
@@ -1687,6 +1708,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/7718027f-a71c-4041-a4cb-f675be6f189e.e9u8ewuqbc.png",
+      "AssetFile": "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop\\wwwroot\\images\\product\\7718027f-a71c-4041-a4cb-f675be6f189e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "128423"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zgZdhsWXTBfTazSXIG2MRjSx3UY1X+sSJO5Ln56ScIs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Jan 2025 01:31:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e9u8ewuqbc"
+        },
+        {
+          "Name": "label",
+          "Value": "images/product/7718027f-a71c-4041-a4cb-f675be6f189e.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zgZdhsWXTBfTazSXIG2MRjSx3UY1X+sSJO5Ln56ScIs="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/7718027f-a71c-4041-a4cb-f675be6f189e.png",
+      "AssetFile": "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop\\wwwroot\\images\\product\\7718027f-a71c-4041-a4cb-f675be6f189e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "128423"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zgZdhsWXTBfTazSXIG2MRjSx3UY1X+sSJO5Ln56ScIs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Jan 2025 01:31:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zgZdhsWXTBfTazSXIG2MRjSx3UY1X+sSJO5Ln56ScIs="
         }
       ]
     },
