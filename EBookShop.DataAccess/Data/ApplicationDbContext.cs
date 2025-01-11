@@ -1,10 +1,12 @@
 ﻿
 using EBookShop.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace EBookShop.DataAccess.Data
 {
-    public class ApplicationDbContext: DbContext
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) //whatever option that are passed to option is passsed to base class of dbcontext
         {
@@ -23,6 +25,8 @@ namespace EBookShop.DataAccess.Data
         //AGAIN THIS IS A MIGRATION USE [ADD MIGRATION] and UPDATE DATABASE
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder); //required when using identity
+
             //Inserts the data in the table
             //ModelBuild has a Generica Entity Method which has a HasData function that takes array of category class
             modelBuilder.Entity<Category>().HasData(

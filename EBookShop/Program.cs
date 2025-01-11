@@ -2,6 +2,7 @@ using EBookShop.DataAccess.Data;
 using EBookShop.DataAccess.Repository.IRepository;
 using EBookShop.DataAccess.Repository;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,8 @@ builder.Services.AddControllersWithViews();
 // Register ApplicationDbContext with PostgreSQL provider
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
 
 //Always register DEPENDENCY INJECTION service while using Repository
 //Types of Dependency: \
