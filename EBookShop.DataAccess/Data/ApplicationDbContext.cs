@@ -19,6 +19,7 @@ namespace EBookShop.DataAccess.Data
         //nOW ENTER UPDATE-DATABASE TO APPLY THE MIGRATION TO THE DATABASE WHICH WILL ADD THE THE TABLE
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Product { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
 
         //OnModelCreating a default method that ENtiyframework uses
         //This inserts data to a tabase
@@ -120,6 +121,8 @@ namespace EBookShop.DataAccess.Data
                   CategoryId = 1,
                   ImageUrl=""
               });
+
+           
 
         }
         }
