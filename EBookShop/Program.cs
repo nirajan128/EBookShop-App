@@ -14,6 +14,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddRazorPages();
 
 //Always register DEPENDENCY INJECTION service while using Repository
 //Types of Dependency: \
@@ -42,6 +43,7 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapRazorPages(); //for razorpages routing
 app.MapControllerRoute(
     name: "default",
     pattern: "{Area=Customer}/{controller=Home}/{action=Index}/{id?}");
