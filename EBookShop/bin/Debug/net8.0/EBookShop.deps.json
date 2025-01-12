@@ -9,6 +9,7 @@
       "EBookShop/1.0.0": {
         "dependencies": {
           "EBookShop.DataAccess": "1.0.0",
+          "EBookShop.Utilities": "1.0.0",
           "Microsoft.AspNetCore.Identity.UI": "8.0.11",
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.11",
@@ -3326,6 +3327,17 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "EBookShop.Utilities/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "8.0.11"
+        },
+        "runtime": {
+          "EBookShop.Utilities.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -5357,6 +5369,11 @@
       "sha512": ""
     },
     "EBookShop.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EBookShop.Utilities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

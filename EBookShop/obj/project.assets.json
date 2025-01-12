@@ -5182,6 +5182,19 @@
         "runtime": {
           "bin/placeholder/EBookShop.Models.dll": {}
         }
+      },
+      "EBookShop.Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "8.0.11"
+        },
+        "compile": {
+          "bin/placeholder/EBookShop.Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EBookShop.Utilities.dll": {}
+        }
       }
     }
   },
@@ -14417,11 +14430,17 @@
       "type": "project",
       "path": "../EBookShop.Models/EBookShop.Models.csproj",
       "msbuildProject": "../EBookShop.Models/EBookShop.Models.csproj"
+    },
+    "EBookShop.Utilities/1.0.0": {
+      "type": "project",
+      "path": "../EBookShop.Utilities/EBookShop.Utilities.csproj",
+      "msbuildProject": "../EBookShop.Utilities/EBookShop.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "EBookShop.DataAccess >= 1.0.0",
+      "EBookShop.Utilities >= 1.0.0",
       "Microsoft.AspNetCore.Identity.UI >= 8.0.11",
       "Microsoft.EntityFrameworkCore >= 9.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.11",
@@ -14466,6 +14485,9 @@
           "projectReferences": {
             "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop.DataAccess\\EBookShop.DataAccess.csproj": {
               "projectPath": "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop.DataAccess\\EBookShop.DataAccess.csproj"
+            },
+            "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop.Utilities\\EBookShop.Utilities.csproj": {
+              "projectPath": "C:\\Users\\niraj\\OneDrive\\Desktop\\EBookShop\\EBookShop.Utilities\\EBookShop.Utilities.csproj"
             }
           }
         }

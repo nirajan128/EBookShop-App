@@ -22,6 +22,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\EBookShop.DataAccess\EBookShop.DataAccess.csproj" />
+		<ProjectReference Include="..\EBookShop.Utilities\EBookShop.Utilities.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

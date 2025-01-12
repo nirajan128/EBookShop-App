@@ -1,0 +1,13 @@
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Utilities\bin\Debug\net8.0\EBookShop.Utilities.deps.json
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Utilities\bin\Debug\net8.0\EBookShop.Utilities.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Utilities\bin\Debug\net8.0\EBookShop.Utilities.pdb
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Utilities\obj\Debug\net8.0\EBookShop.Utilities.csproj.AssemblyReference.cache
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Utilities\obj\Debug\net8.0\EBookShop.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Utilities\obj\Debug\net8.0\EBookShop.Utilities.AssemblyInfoInputs.cache
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Utilities\obj\Debug\net8.0\EBookShop.Utilities.AssemblyInfo.cs
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Utilities\obj\Debug\net8.0\EBookShop.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Utilities\obj\Debug\net8.0\EBookShop.Utilities.sourcelink.json
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Utilities\obj\Debug\net8.0\EBookShop.Utilities.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Utilities\obj\Debug\net8.0\refint\EBookShop.Utilities.dll
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Utilities\obj\Debug\net8.0\EBookShop.Utilities.pdb
+C:\Users\niraj\OneDrive\Desktop\EBookShop\EBookShop.Utilities\obj\Debug\net8.0\ref\EBookShop.Utilities.dll
