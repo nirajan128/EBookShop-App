@@ -156,8 +156,9 @@ namespace EBookShop.Areas.Identity.Pages.Account
 
                 if (result.Succeeded)
                 {
+                    _logger.LogInformation("User created a new account with password.");
                     //After the user hase been created
-                    if (String.IsNullOrEmpty(Input.Role))
+                    if (!String.IsNullOrEmpty(Input.Role))
                     {
                         await _userManager.AddToRoleAsync(user, Input.Role); //assign the selected role for the user
                     }
@@ -165,7 +166,7 @@ namespace EBookShop.Areas.Identity.Pages.Account
                     {
                         await _userManager.AddToRoleAsync(user, SD.Role_Customer); //If nothing was selected assign customer role
                     }
-                    _logger.LogInformation("User created a new account with password.");
+                    
 
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
