@@ -1,12 +1,16 @@
-﻿using EBookShop.DataAccess.Repository.IRepository;
+﻿
+using EBookShop.DataAccess.Repository.IRepository;
 using EBookShop.Models;
 using EBookShop.Models.ViewModel;
+using EBookShop.Utilities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace EBookShop.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class ProductController : Controller
     {
         //ICategory Repository from Repository is used to replace the application DB context in controller [Same REpository can be used for different controller]
