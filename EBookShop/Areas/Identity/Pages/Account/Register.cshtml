@@ -40,8 +40,13 @@
                         <select asp-for="Input.Role" asp-items="@Model.Input.RoleList" class="form-select">
                             <option disabled selected>--select role</option>
                         </select>
-
                     </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="Input.StreetAddress" class="form-control"/>
+                        <label asp-for="Input.StreetAddress">Address</label>
+                        <span asp-validation-for="Input.StreetAddress" class="text-danger"></span>
+                    </div>
+ 
                     <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
                 </form>
             </div>
