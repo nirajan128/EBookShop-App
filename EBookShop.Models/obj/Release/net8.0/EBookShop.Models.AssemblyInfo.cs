@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EBookShop.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7aab4875459ebbf3ac3f9fdd2a6374c3295ce7ea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+082840fc77cc995061302e29f5190bbd367b3afe")]
 [assembly: System.Reflection.AssemblyProductAttribute("EBookShop.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EBookShop.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
